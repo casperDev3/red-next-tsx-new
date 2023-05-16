@@ -1,0 +1,27 @@
+.header{
+    background-color: #fff;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: darkred;
+    .logo{
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        .nav-item{
+            margin-left: 20px;
+            color: #333;
+            cursor: pointer;
+            &:hover{
+                color: #1890ff;
+            }
+        }
+    }
+}
