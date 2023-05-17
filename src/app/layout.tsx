@@ -1,6 +1,13 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 
+// import bootstrap css
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Import Swiper styles
+import 'swiper/swiper.min.css';
+
+
 
 // Components
 import Header from '@/components/header'
