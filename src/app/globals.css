@@ -1,3 +1,8 @@
+/* Import Swiper styles  */
+@import '~swiper/swiper-bundle.css';
+
+
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;

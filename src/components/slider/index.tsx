@@ -8,17 +8,20 @@ import image2 from '@/assets/images/Photo-182.jpg'
 import image3 from '@/assets/images/Photo-188.jpg'
 import image4 from '@/assets/images/Photo-196.jpg'
 
-import s from './index.module.scss'
-
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
+// import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+
+// import styles
+import s from './index.module.scss'
+
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+
 
 
 const Slider = () => {
@@ -28,25 +31,25 @@ const Slider = () => {
             <div>
                 <Swiper
                     // Install Swiper modules
-                    modules={[Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={50}
+                    modules={[Navigation, Pagination, Scrollbar]}
+
                     slidesPerView={3}
-                    navigation
-                    pagination={{ clickable: true }}    
-                    onSwiper={(swiper) => console.log(swiper)}
+                    navigation={true}
+                    pagination={{ clickable: true }}
+                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
                 >
-                    <SwiperSlide>
-                        <Image src={image1} alt="Picture of the author" height={500} />
+                    <SwiperSlide className={s.swiperSlide}>
+                        <Image src={image1} alt="Picture of the author" height={400} />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <Image src={image2} alt="Picture of the author" height={500} />
+                    <SwiperSlide className={s.swiperSlide}>
+                        <Image src={image2} alt="Picture of the author" height={400} />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <Image src={image3} alt="Picture of the author" height={500} />
+                    <SwiperSlide className={s.swiperSlide}>
+                        <Image src={image3} alt="Picture of the author" height={400} />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <Image src={image4} alt="Picture of the author" height={500} />
+                    <SwiperSlide className={s.swiperSlide}>
+                        <Image src={image4} alt="Picture of the author" height={400} />
                     </SwiperSlide>
                     {/* ... */}
                 </Swiper>
