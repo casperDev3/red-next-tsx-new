@@ -14,3 +14,41 @@
   text-align: center;
   color: #080597;
 }
+
+.counter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.count{
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  color: #080597;
+  width: 150px;
+}
+
+.button{
+  background-color: #080597;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #080597;
+}
+
+.button:hover{
+  background-color: #fff;
+  color: #080597;
+  border: 1px solid #080597;
+}

@@ -12,6 +12,7 @@ import 'swiper/swiper.min.css';
 // Components
 import Header from '@/components/header'
 import Footer from '@/components/footer'
+import { Providers } from './store/provider';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,9 +30,11 @@ export default function RootLayout({
     <html lang="en">
 
       <body className={inter.className}>
-        <Header />
-        {children}
-        <Footer />
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+       </Providers>
       </body>
 
     </html>

@@ -2,6 +2,12 @@
 "use client";
 
 import React from 'react'
+import Image from 'next/image';
+import image1 from '@/assets/images/Photo1.jpg'
+import image2 from '@/assets/images/Photo-182.jpg'
+import image3 from '@/assets/images/Photo-188.jpg'
+import image4 from '@/assets/images/Photo-196.jpg'
+
 import s from './index.module.scss'
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
@@ -31,11 +37,17 @@ const Slider = () => {
                     onSlideChange={() => console.log('slide change')}
                 >
                     <SwiperSlide>
-                Slide 1
+                        <Image src={image1} alt="Picture of the author" height={500} />
                     </SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
+                    <SwiperSlide>
+                        <Image src={image2} alt="Picture of the author" height={500} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image src={image3} alt="Picture of the author" height={500} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image src={image4} alt="Picture of the author" height={500} />
+                    </SwiperSlide>
                     {/* ... */}
                 </Swiper>
             </div>
